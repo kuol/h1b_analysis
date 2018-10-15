@@ -97,7 +97,7 @@ app = dash.Dash(__name__, external_stylesheets = external_stylesheets)
 app.layout = html.Div(children=[
     title,
     drop_down,
-    html.Div(id='my_table'),
+    html.Div(id='my_table', className="six columns"),
     html.Div([dcc.Graph(id='hq_pie')], style = {'width': '48%', 'display': 'inline-block'}),
     html.Div([generate_scatter_line(df_hq_ratio)], style = {'width': '48%', 'display': 'inline-block'})
     ])
